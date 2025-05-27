@@ -1,0 +1,27 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Ground" CircId="Ground-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-372,-108" rotation="0" hflip="1" vflip="1" label="Ground-2" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="TextComponent" CircId="TextComponent-13" mainComp="false" Show_id="false" Show_Val="false" Pos="-392,-208" rotation="0" hflip="1" vflip="1" label="TextComponent-13" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="1 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="OPTOTRIAC TEST" />
+
+<item itemtype="Subcircuit" CircId="OPTOTRIAC-14" mainComp="false" Show_id="true" Show_Val="false" Pos="-336,-148" rotation="0" hflip="1" vflip="1" label="OPTOTRIAC-14" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="Csource-68" Control_Pins="false" CurrSource="true" CurrControl="false" Gain="1" Voltage="5 V" Current="1 A" />
+
+<mainCompProps MainCompId="Resistor-54" Resistance="100 Ω" />
+</item>
+
+<item itemtype="WaveGen" CircId="WaveGen-15" mainComp="false" Show_id="false" Show_Val="false" Pos="-388,-140" rotation="0" hflip="1" vflip="1" label="WaveGen-15" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Square" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="10 _%" Always_On="true" Bipolar="false" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="WaveGen" CircId="WaveGen-16" mainComp="false" Show_id="false" Show_Val="false" Pos="-252,-140" rotation="180" hflip="1" vflip="1" label="WaveGen-16" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="true" Bipolar="false" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="-292,-100" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Ground-2-Gnd" endpinid="OPTOTRIAC-14-IG" pointList="-372,-124,-372,-132,-344,-132" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="WaveGen-16-outnod" endpinid="OPTOTRIAC-14-C" pointList="-268,-140,-304,-140" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="WaveGen-15-outnod" endpinid="OPTOTRIAC-14-IN" pointList="-372,-140,-344,-140" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="OPTOTRIAC-14-E" endpinid="Ground-17-Gnd" pointList="-304,-124,-292,-124,-292,-116" />
+
+</circuit>

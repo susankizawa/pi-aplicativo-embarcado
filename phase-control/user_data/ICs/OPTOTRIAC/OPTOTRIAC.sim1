@@ -1,0 +1,59 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Package" CircId="Package-39" mainComp="false" Show_id="true" Show_Val="false" Pos="-540,180" rotation="0" hflip="1" vflip="1" label="OPTOTRIAC" idLabPos="-14,-17" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" SubcType="Board" Width="3" Height="4" Name="Package" Package_File="OPTOTRIAC.package" Background="color(250,50,50)" Logic_Symbol="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-50" mainComp="false" Show_id="false" Show_Val="false" Pos="-444,128" rotation="0" hflip="-1" vflip="1" label="Tunnel-50" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="96,-52" circPos="-444,128" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Name="E" IsBus="false" />
+
+<item itemtype="Resistor" CircId="Resistor-55" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-516,80" rotation="0" hflip="1" vflip="1" label="Resistor-55" idLabPos="-16,-24" labelrot="0" valLabPos="-8.1753,-19.1163" valLabRot="0" boardPos="24,-100" circPos="-516,80" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Resistance="1 kΩ" />
+
+<item itemtype="Tunnel" CircId="Tunnel-65" mainComp="false" Show_id="false" Show_Val="false" Pos="-616,124" rotation="0" hflip="1" vflip="1" label="Tunnel-65" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="-76,-56" circPos="-616,124" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="IG" IsBus="false" />
+
+<item itemtype="TextComponent" CircId="TextComponent-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-560,16" rotation="0" hflip="1" vflip="1" label="TextComponent-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="-20,-164" circPos="-560,16" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Margin="1 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="true" Text="OPTOTRIAC" />
+
+<item itemtype="Resistor" CircId="Resistor-70" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-484,104" rotation="90" hflip="1" vflip="1" label="Resistor-70" idLabPos="-16,-24" labelrot="0" valLabPos="-8.84944,4.50337" valLabRot="0" boardPos="56,-76" circPos="-484,104" boardRot="90" circRot="90" boardHflip="1" boardVflip="1" Resistance="10 kΩ" />
+
+<item itemtype="Led" CircId="Led-42" mainComp="false" Show_id="false" Show_Val="false" Pos="-572,104" rotation="90" hflip="1" vflip="1" label="Led-42" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="-32,-76" circPos="-572,104" boardRot="90" circRot="90" boardHflip="1" boardVflip="1" Color="Yellow" Grounded="false" Threshold="2 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" Links="Csource-68," />
+
+<item itemtype="Csource" CircId="Csource-68" mainComp="true" Show_id="false" Show_Val="false" Pos="-540,104" rotation="-180" hflip="1" vflip="1" label="Csource-68" idLabPos="4,-28" labelrot="0" valLabPos="4,18" valLabRot="0" boardPos="0,-76" circPos="-540,104" boardRot="-180" circRot="-180" boardHflip="1" boardVflip="1" Control_Pins="false" CurrSource="true" CurrControl="false" Gain="1" Voltage="5 V" Current="1 A" />
+
+<item itemtype="Tunnel" CircId="Tunnel-52" mainComp="false" Show_id="false" Show_Val="false" Pos="-444,36" rotation="0" hflip="-1" vflip="1" label="Tunnel-52" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="96,-144" circPos="-444,36" boardRot="0" circRot="0" boardHflip="-1" boardVflip="1" Name="C" IsBus="false" />
+
+<item itemtype="Resistor" CircId="Resistor-54" mainComp="true" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-592,84" rotation="0" hflip="1" vflip="1" label="Resistor-54" idLabPos="-16,-24" labelrot="0" valLabPos="-11.2221,-18.6451" valLabRot="0" boardPos="-52,-96" circPos="-592,84" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Resistance="100 Ω" />
+
+<item itemtype="Tunnel" CircId="Tunnel-44" mainComp="false" Show_id="false" Show_Val="false" Pos="-616,84" rotation="0" hflip="1" vflip="1" label="Tunnel-44" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="-76,-96" circPos="-616,84" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="IN" IsBus="false" />
+
+<item itemtype="Triac" CircId="Triac-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-452,64" rotation="90" hflip="1" vflip="1" label="Triac-85" idLabPos="-12,-30" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="88,-116" circPos="-452,64" boardRot="90" circRot="90" boardHflip="1" boardVflip="1" GateRes="100 Ω" TrigCurr="10 mA" HoldCurr="8.2 mA" />
+
+<item itemtype="Node" CircId="Node-84" mainComp="false" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" Pos="-484,128" />
+
+<item itemtype="Node" CircId="Node-86" mainComp="false" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" Pos="-452,128" />
+
+<item itemtype="Node" CircId="Node-87" mainComp="false" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" Pos="-484,80" />
+
+<item itemtype="Connector" uid="Connector-129" startpinid="Tunnel-65-pin" endpinid="Led-42-rPin" pointList="-616,124,-572,124,-572,120" />
+
+<item itemtype="Connector" uid="Connector-126" startpinid="Resistor-70-rPin" endpinid="Node-84-0" pointList="-484,120,-484,128" />
+
+<item itemtype="Connector" uid="Connector-125" startpinid="Csource-68-s1Pin" endpinid="Node-84-1" pointList="-540,124,-540,128,-484,128" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="Resistor-54-rPin" endpinid="Led-42-lPin" pointList="-576,84,-572,84,-572,88" />
+
+<item itemtype="Connector" uid="Connector-128" startpinid="Tunnel-44-pin" endpinid="Resistor-54-lPin" pointList="-616,84,-608,84" />
+
+<item itemtype="Connector" uid="Connector-124" startpinid="Csource-68-s2Pin" endpinid="Resistor-55-lPin" pointList="-540,84,-540,80,-532,80" />
+
+<item itemtype="Connector" uid="Connector-134" startpinid="Tunnel-52-pin" endpinid="Triac-85-lPin" pointList="-444,36,-452,36,-452,48" />
+
+<item itemtype="Connector" uid="Connector-135" startpinid="Triac-85-rPin" endpinid="Node-86-1" pointList="-452,80,-452,128" />
+
+<item itemtype="Connector" uid="Connector-136" startpinid="Tunnel-50-pin" endpinid="Node-86-0" pointList="-444,128,-452,128" />
+
+<item itemtype="Connector" uid="Connector-137" startpinid="Node-86-2" endpinid="Node-84-2" pointList="-452,128,-484,128" />
+
+<item itemtype="Connector" uid="Connector-138" startpinid="Triac-85-gPin" endpinid="Node-87-1" pointList="-464,80,-484,80" />
+
+<item itemtype="Connector" uid="Connector-139" startpinid="Resistor-70-lPin" endpinid="Node-87-0" pointList="-484,88,-484,80" />
+
+<item itemtype="Connector" uid="Connector-140" startpinid="Node-87-2" endpinid="Resistor-55-rPin" pointList="-484,80,-500,80" />
+
+</circuit>

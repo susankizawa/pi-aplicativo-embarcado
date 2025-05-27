@@ -1,0 +1,12 @@
+<!DOCTYPE SimulIDE>
+
+<itemlib>
+    
+  <itemset category="Logic/Other IC" type="Subcircuit" folder="ICs" icon="ic2.png">
+
+    <item name="OPTOCOUPLER"  info="General-purpose optocoupler for signal isolation" />
+    <item name="OPTOTRIAC" info="LED-triggered TRIAC for AC control" />
+
+  </itemset>
+
+</itemlib>
