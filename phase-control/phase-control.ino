@@ -1,42 +1,59 @@
-// C++ code
-//
+#include <avr/io.h>
+#include <avr/interrupt.h>
 
-#define pot A0
-#define zc 2
-#define triac 9
+#define DETECT 2
+#define GATE 9
+#define PULSE_WIDTH_COUNTS 63
+#define POT A0
 
-int zeroCross = 0;
-int last_state = 0;
+volatile int phaseDelayCounts = 0;
 
-void setup() {
-  // set up pins
-  pinMode(pot, INPUT);        // potentiometer input
-  pinMode(triac, OUTPUT);    // triac gate control
-  
+void setup(){
+  pinMode(DETECT, INPUT_PULLUP);
+  pinMode(POT, INPUT);
+  pinMode(GATE, OUTPUT);
+
+  TCCR1A = 0x00;
+  TCCR1B = 0x00;
+
+  OCR1A = 1;
+  OCR1B = 1 + PULSE_WIDTH_COUNTS;
+
+  TIMSK1 = (1 << OCIE1A) | (1 << OCIE1B) | (1 << TOIE1);
+
+  attachInterrupt(digitalPinToInterrupt(DETECT), zeroCrossingInterrupt, RISING);
+
   Serial.begin(9600);
-  
-  // set up zero crossing interrupt
-  attachInterrupt(digitalPinToInterrupt(zc), zeroCrossingInterrupt, RISING);
+  Serial.println("AC Control V1.2 Initialized");
 }
 
-void loop() {
-  int potValue = analogRead(pot);
-  int phaseDelay = map(potValue, 0, 1023, 16.66, 1);
-  
-  Serial.print("phaseDelay: ");
-  Serial.println(phaseDelay);
-  
-  if(zeroCross){
-    delay(phaseDelay); // this controls the power
-    digitalWrite(triac, HIGH);
-    delay(1);
-    digitalWrite(triac, LOW);
-    zeroCross = 0;
-  }
+void zeroCrossingInterrupt(){
+  TCCR1B = 0x00;
+
+  TCNT1 = 0;
+
+  TCCR1B = (1 << CS12);
+
+  digitalWrite(GATE, LOW);
 }
 
-// Interrupt Service Routines
+ISR(TIMER1_COMPA_vect){
+  digitalWrite(GATE, HIGH);
 
-void zeroCrossingInterrupt() {
-  zeroCross = 1;
+  OCR1B = TCNT1 + PULSE_WIDTH_COUNTS;
+}
+
+ISR(TIMER1_COMPB_vect){
+  digitalWrite(GATE, LOW);
+  TCCR1B = 0x00;
+}
+
+void loop(){
+  int potValue = analogRead(POT);
+
+  int phaseDelay = map(potValue, 0, 1023, 480, 5);
+
+  OCR1A = phaseDelay;
+
+  delay(15);
 }
