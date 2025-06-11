@@ -62,7 +62,7 @@ void loop(){
   // Converte o valor do potenciômetro em tempo de atraso de fase (em contagens de timer)
   // 0 = 0ms
   // 518 - PULSE_WIDTH_COUNTS = 8.288ms - a duração do pulso de disparo
-  int phaseDelay = map(potValue, 0, 1023, 0, 518 - PULSE_WIDTH_COUNTS);
+  int phaseDelay = map(potValue, 0, 1023, 0, 510 - PULSE_WIDTH_COUNTS);
 
   // Atualiza o valor de comparação A com o novo atraso de fase
   OCR1A = phaseDelay;
