@@ -48,7 +48,7 @@
 
 <item itemtype="Resistor" CircId="Resistor-68" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="180,64" rotation="360" hflip="-1" vflip="1" label="Resistor-68" idLabPos="-16,-24" labelrot="0" valLabPos="-14.4257,-21.0606" valLabRot="0" Resistance="200 Ω" />
 
-<item itemtype="Resistor" CircId="Resistor-70" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="148,164" rotation="90" hflip="1" vflip="1" label="Resistor-70" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+<item itemtype="Resistor" CircId="Resistor-70" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="148,164" rotation="90" hflip="1" vflip="1" label="Resistor-70" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="5 Ω" />
 
 <item itemtype="Oscope" CircId="Oscope-78" mainComp="false" Show_id="false" Show_Val="false" Pos="804,-304" rotation="0" hflip="1" vflip="1" label="Oscope-78" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="3333333333" TimPos="0,0,-1222919080,0," VolDiv="51.7474,51.7474,51.7474,51.7474," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="9.45022e-13,0,-0.559985,-0.472543," />
 
