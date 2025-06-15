@@ -84,6 +84,8 @@
 
 <item itemtype="Tunnel" CircId="Tunnel-136" mainComp="false" Show_id="false" Show_Val="false" Pos="332,-288" rotation="720" hflip="1" vflip="1" label="Tunnel-136" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Atraso" IsBus="false" />
 
+<item itemtype="Rail" CircId="Rail-137" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="508,-36" rotation="90" hflip="1" vflip="1" label="Rail-137" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
 <item itemtype="Node" CircId="Node-16" mainComp="false" Pos="100,-152" />
 
 <item itemtype="Node" CircId="Node-17" mainComp="false" Pos="100,-96" />
@@ -191,5 +193,7 @@
 <item itemtype="Connector" uid="Connector-435" startpinid="Resistor-70-rPin" endpinid="Tunnel-116-pin" pointList="148,180,148,196" />
 
 <item itemtype="Connector" uid="Connector-439" startpinid="Tunnel-110-pin" endpinid="Resistor-7-rPin" pointList="100,-24,100,-44" />
+
+<item itemtype="Connector" uid="Connector-440" startpinid="Rail-137-outnod" endpinid="Uno-57-5V0" pointList="508,-20,508,-8,484,-8" />
 
 </circuit>
