@@ -1,0 +1,195 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Diode" CircId="Diode-4" mainComp="false" Show_id="false" Show_Val="false" Pos="76,-96" rotation="360" hflip="1" vflip="1" label="Diode-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="1.1 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="0.021295 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-3" mainComp="false" Show_id="false" Show_Val="false" Pos="124,-96" rotation="360" hflip="1" vflip="1" label="Diode-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="1.1 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="0.021295 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-2" mainComp="false" Show_id="false" Show_Val="false" Pos="76,-152" rotation="360" hflip="1" vflip="1" label="Diode-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="1.1 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="0.021295 nA" EmCoef="2" />
+
+<item itemtype="Diode" CircId="Diode-1" mainComp="false" Show_id="false" Show_Val="false" Pos="124,-152" rotation="360" hflip="1" vflip="1" label="Diode-1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Model="Diode Default" Threshold="1.1 V" MaxCurrent="1 A" Resistance="0.05 Ω" BrkDownV="0 V" SatCurrent="0.021295 nA" EmCoef="2" />
+
+<item itemtype="Resistor" CircId="Resistor-7" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="100,-60" rotation="90" hflip="1" vflip="1" label="Resistor-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="47 kΩ" />
+
+<item itemtype="WaveGen" CircId="WaveGen-10" mainComp="false" ShowProp="Semi_Ampli" Show_id="false" Show_Val="true" Pos="0,60" rotation="0" hflip="1" vflip="1" label="WaveGen-10" idLabPos="-64,-24" labelrot="0" valLabPos="-17.257,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="60 Hz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="true" Bipolar="true" Floating="false" Semi_Ampli="110 V" Mid_Volt="0 V" />
+
+<item itemtype="Resistor" CircId="Resistor-6" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="100,-184" rotation="810" hflip="1" vflip="1" label="Resistor-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="47 kΩ" />
+
+<item itemtype="Oscope" CircId="Oscope-18" mainComp="false" Show_id="false" Show_Val="false" Pos="440,-304" rotation="0" hflip="1" vflip="1" label="Oscope-18" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="3333333333" TimPos="0,0,299999997,0," VolDiv="25.1333,2.34074,2.34074,2.34074," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,-0.00364457,0.051303,-0.472543," />
+
+<item itemtype="Ground" CircId="Ground-39" mainComp="false" Show_id="false" Show_Val="false" Pos="264,-40" rotation="0" hflip="1" vflip="1" label="Ground-39" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-40" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="264,-92" rotation="90" hflip="1" vflip="1" label="Resistor-40" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1 kΩ" />
+
+<item itemtype="Subcircuit" CircId="OPTOCOUPLER-43" mainComp="false" Show_id="true" Show_Val="false" Pos="212,-136" rotation="0" hflip="1" vflip="1" label="OPTOCOUPLER-43" idLabPos="-32.7078,-20" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="Resistor-54" Resistance="100 Ω" />
+
+<mainCompProps MainCompId="Csource-68" Control_Pins="false" CurrSource="true" CurrControl="false" Gain="1" Voltage="5 V" Current="1 A" />
+</item>
+
+<item itemtype="Subcircuit" CircId="Uno-57" mainComp="false" Show_id="true" Show_Val="false" Pos="332,-104" rotation="0" hflip="1" vflip="1" label="Uno-57" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="phase-control.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Potentiometer" CircId="Potentiometer-60" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="532,-48" rotation="90" hflip="1" vflip="1" label="Potentiometer-60" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="10 kΩ" Value_Ohm="10000 Ω" Slider="false" Scale="1" />
+
+<item itemtype="Ground" CircId="Ground-62" mainComp="false" Show_id="false" Show_Val="false" Pos="532,4" rotation="0" hflip="1" vflip="1" label="Ground-62" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Subcircuit" CircId="OPTOTRIAC-63" mainComp="false" Show_id="true" Show_Val="false" Pos="260,104" rotation="0" hflip="-1" vflip="1" label="OPTOTRIAC-63" idLabPos="-28.1796,-20.4859" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="Resistor-54" Resistance="100 Ω" />
+
+<mainCompProps MainCompId="Csource-68" Control_Pins="false" CurrSource="true" CurrControl="false" Gain="1" Voltage="5 V" Current="1 A" />
+</item>
+
+<item itemtype="Ground" CircId="Ground-64" mainComp="false" Show_id="false" Show_Val="false" Pos="280,152" rotation="0" hflip="1" vflip="1" label="Ground-64" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Triac" CircId="Triac-65" mainComp="false" Show_id="false" Show_Val="false" Pos="148,112" rotation="90" hflip="-1" vflip="1" label="Triac-65" idLabPos="-12,-30" labelrot="0" valLabPos="-16,20" valLabRot="0" GateRes="100 Ω" TrigCurr="10 mA" HoldCurr="8.2 mA" />
+
+<item itemtype="Resistor" CircId="Resistor-66" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="296,28" rotation="270" hflip="1" vflip="1" label="Resistor-66" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-68" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="180,64" rotation="360" hflip="-1" vflip="1" label="Resistor-68" idLabPos="-16,-24" labelrot="0" valLabPos="-14.4257,-21.0606" valLabRot="0" Resistance="200 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-70" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="148,164" rotation="90" hflip="1" vflip="1" label="Resistor-70" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Oscope" CircId="Oscope-78" mainComp="false" Show_id="false" Show_Val="false" Pos="804,-304" rotation="0" hflip="1" vflip="1" label="Oscope-78" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="3333333333" TimPos="0,0,-1222919080,0," VolDiv="51.7474,51.7474,51.7474,51.7474," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="9.45022e-13,0,-0.559985,-0.472543," />
+
+<item itemtype="Rail" CircId="Rail-82" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="532,-100" rotation="90" hflip="1" vflip="1" label="Rail-82" idLabPos="-5,-10" labelrot="-90" valLabPos="-12,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Rail" CircId="Rail-87" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="264,-160" rotation="90" hflip="1" vflip="1" label="Rail-87" idLabPos="-5,-10" labelrot="-90" valLabPos="-14.9151,6" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Tunnel" CircId="Tunnel-105" mainComp="false" Show_id="false" Show_Val="false" Pos="32,52" rotation="360" hflip="-1" vflip="1" label="Tunnel-105" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Fase" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-106" mainComp="false" Show_id="false" Show_Val="false" Pos="32,68" rotation="360" hflip="-1" vflip="1" label="Tunnel-106" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Neutro" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-107" mainComp="false" Show_id="false" Show_Val="false" Pos="100,-216" rotation="90" hflip="-1" vflip="1" label="Tunnel-107" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Fase" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-108" mainComp="false" Show_id="false" Show_Val="false" Pos="148,48" rotation="-270" hflip="-1" vflip="1" label="Tunnel-108" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Fase" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-110" mainComp="false" Show_id="false" Show_Val="false" Pos="100,-24" rotation="270" hflip="-1" vflip="1" label="Tunnel-110" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Neutro" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-116" mainComp="false" Show_id="false" Show_Val="false" Pos="148,196" rotation="270" hflip="-1" vflip="1" label="Tunnel-116" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Neutro" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-123" mainComp="false" Show_id="false" Show_Val="false" Pos="332,-352" rotation="360" hflip="1" vflip="1" label="Tunnel-123" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Fase" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-125" mainComp="false" Show_id="false" Show_Val="false" Pos="132,140" rotation="0" hflip="1" vflip="1" label="Tunnel-125" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Resistencia do chuveiro" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-127" mainComp="false" Show_id="false" Show_Val="false" Pos="700,-352" rotation="0" hflip="1" vflip="1" label="Tunnel-127" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Resistencia do chuveiro" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-129" mainComp="false" Show_id="false" Show_Val="false" Pos="700,-240" rotation="360" hflip="1" vflip="1" label="Tunnel-129" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Neutro" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-130" mainComp="false" Show_id="false" Show_Val="false" Pos="292,-140" rotation="450" hflip="1" vflip="1" label="Tunnel-130" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Detector ZC" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-132" mainComp="false" Show_id="false" Show_Val="false" Pos="332,-320" rotation="1440" hflip="1" vflip="1" label="Tunnel-132" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Detector ZC" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-134" mainComp="false" Show_id="false" Show_Val="false" Pos="276,-8" rotation="720" hflip="1" vflip="1" label="Tunnel-134" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Atraso" IsBus="false" />
+
+<item itemtype="Tunnel" CircId="Tunnel-136" mainComp="false" Show_id="false" Show_Val="false" Pos="332,-288" rotation="720" hflip="1" vflip="1" label="Tunnel-136" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Name="Atraso" IsBus="false" />
+
+<item itemtype="Node" CircId="Node-16" mainComp="false" Pos="100,-152" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="100,-96" />
+
+<item itemtype="Node" CircId="Node-44" mainComp="false" Pos="156,-128" />
+
+<item itemtype="Node" CircId="Node-109" mainComp="false" Pos="148,64" />
+
+<item itemtype="Node" CircId="Node-113" mainComp="false" Pos="44,-120" />
+
+<item itemtype="Node" CircId="Node-115" mainComp="false" Pos="264,-120" />
+
+<item itemtype="Node" CircId="Node-126" mainComp="false" Pos="148,140" />
+
+<item itemtype="Node" CircId="Node-131" mainComp="false" Pos="292,-120" />
+
+<item itemtype="Node" CircId="Node-135" mainComp="false" Pos="296,-8" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="Diode-2-rPin" endpinid="Node-16-0" pointList="92,-152,100,-152" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="Node-16-2" endpinid="Diode-1-lPin" pointList="100,-152,108,-152" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="Resistor-7-lPin" endpinid="Node-17-1" pointList="100,-76,100,-96" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Diode-4-rPin" endpinid="Node-17-0" pointList="92,-96,100,-96" />
+
+<item itemtype="Connector" uid="Connector-48" startpinid="Node-17-2" endpinid="Diode-3-lPin" pointList="100,-96,108,-96" />
+
+<item itemtype="Connector" uid="Connector-139" startpinid="Node-44-2" endpinid="Diode-3-rPin" pointList="156,-128,156,-96,140,-96" />
+
+<item itemtype="Connector" uid="Connector-190" startpinid="Resistor-40-rPin" endpinid="Ground-39-Gnd" pointList="264,-76,264,-56" />
+
+<item itemtype="Connector" uid="Connector-194" startpinid="Uno-57-A0" endpinid="Potentiometer-60-PinM" pointList="484,-48,516,-48" />
+
+<item itemtype="Connector" uid="Connector-198" startpinid="Potentiometer-60-PinB" endpinid="Ground-62-Gnd" pointList="532,-32,532,-12" />
+
+<item itemtype="Connector" uid="Connector-260" startpinid="Rail-82-outnod" endpinid="Potentiometer-60-PinA" pointList="532,-84,532,-64" />
+
+<item itemtype="Connector" uid="Connector-290" startpinid="Node-16-1" endpinid="Resistor-6-rPin" pointList="100,-152,100,-168" />
+
+<item itemtype="Connector" uid="Connector-328" startpinid="WaveGen-10-outnod" endpinid="Tunnel-105-pin" pointList="16,56,32,56,32,52" />
+
+<item itemtype="Connector" uid="Connector-329" startpinid="WaveGen-10-gndnod" endpinid="Tunnel-106-pin" pointList="16,64,32,64,32,68" />
+
+<item itemtype="Connector" uid="Connector-332" startpinid="Tunnel-108-pin" endpinid="Node-109-1" pointList="148,48,148,64" />
+
+<item itemtype="Connector" uid="Connector-333" startpinid="Triac-65-lPin" endpinid="Node-109-0" pointList="148,96,148,64" />
+
+<item itemtype="Connector" uid="Connector-339" startpinid="OPTOCOUPLER-43-C" endpinid="Rail-87-outnod" pointList="244,-128,264,-128,264,-144" />
+
+<item itemtype="Connector" uid="Connector-347" startpinid="Diode-2-lPin" endpinid="Node-113-0" pointList="60,-152,44,-152,44,-120" />
+
+<item itemtype="Connector" uid="Connector-348" startpinid="Node-113-2" endpinid="Diode-4-lPin" pointList="44,-120,44,-96,60,-96" />
+
+<item itemtype="Connector" uid="Connector-355" startpinid="Resistor-40-lPin" endpinid="Node-115-0" pointList="264,-108,264,-120" />
+
+<item itemtype="Connector" uid="Connector-356" startpinid="Node-115-2" endpinid="OPTOCOUPLER-43-E" pointList="264,-120,244,-120" />
+
+<item itemtype="Connector" uid="Connector-334" startpinid="Node-109-2" endpinid="Resistor-68-rPin" pointList="148,64,164,64" />
+
+<item itemtype="Connector" uid="Connector-363" startpinid="OPTOTRIAC-63-IG" endpinid="Ground-64-Gnd" pointList="268,120,280,120,280,136" />
+
+<item itemtype="Connector" uid="Connector-366" startpinid="Resistor-68-lPin" endpinid="OPTOTRIAC-63-C" pointList="196,64,212,64,212,112,228,112" />
+
+<item itemtype="Connector" uid="Connector-157" startpinid="Diode-1-rPin" endpinid="Node-44-0" pointList="140,-152,156,-152,156,-128" />
+
+<item itemtype="Connector" uid="Connector-382" startpinid="Resistor-66-lPin" endpinid="OPTOTRIAC-63-IN" pointList="296,44,296,112,268,112" />
+
+<item itemtype="Connector" uid="Connector-387" startpinid="Resistor-6-lPin" endpinid="Tunnel-107-pin" pointList="100,-200,100,-216" />
+
+<item itemtype="Connector" uid="Connector-388" startpinid="Tunnel-123-pin" endpinid="Oscope-18-Pin0" pointList="332,-352,352,-352" />
+
+<item itemtype="Connector" uid="Connector-389" startpinid="Tunnel-125-pin" endpinid="Node-126-1" pointList="132,140,148,140" />
+
+<item itemtype="Connector" uid="Connector-391" startpinid="Node-126-2" endpinid="Triac-65-rPin" pointList="148,140,148,128" />
+
+<item itemtype="Connector" uid="Connector-394" startpinid="Tunnel-127-pin" endpinid="Oscope-78-Pin0" pointList="700,-352,716,-352" />
+
+<item itemtype="Connector" uid="Connector-395" startpinid="Tunnel-129-pin" endpinid="Oscope-78-PinG" pointList="700,-240,716,-240" />
+
+<item itemtype="Connector" uid="Connector-396" startpinid="Tunnel-130-pin" endpinid="Node-131-1" pointList="292,-140,292,-120" />
+
+<item itemtype="Connector" uid="Connector-397" startpinid="Node-115-1" endpinid="Node-131-0" pointList="264,-120,292,-120" />
+
+<item itemtype="Connector" uid="Connector-398" startpinid="Node-131-2" endpinid="Uno-57-2" pointList="292,-120,292,-72,340,-72" />
+
+<item itemtype="Connector" uid="Connector-399" startpinid="Tunnel-132-pin" endpinid="Oscope-18-Pin1" pointList="332,-320,352,-320" />
+
+<item itemtype="Connector" uid="Connector-404" startpinid="Tunnel-134-pin" endpinid="Node-135-1" pointList="276,-8,296,-8" />
+
+<item itemtype="Connector" uid="Connector-405" startpinid="Uno-57-9" endpinid="Node-135-0" pointList="340,-8,296,-8" />
+
+<item itemtype="Connector" uid="Connector-406" startpinid="Node-135-2" endpinid="Resistor-66-rPin" pointList="296,-8,296,12" />
+
+<item itemtype="Connector" uid="Connector-407" startpinid="Tunnel-136-pin" endpinid="Oscope-18-Pin2" pointList="332,-288,352,-288" />
+
+<item itemtype="Connector" uid="Connector-422" startpinid="Node-113-1" endpinid="OPTOCOUPLER-43-IG" pointList="44,-120,204,-120" />
+
+<item itemtype="Connector" uid="Connector-423" startpinid="Node-44-1" endpinid="OPTOCOUPLER-43-IN" pointList="156,-128,204,-128" />
+
+<item itemtype="Connector" uid="Connector-427" startpinid="Triac-65-gPin" endpinid="OPTOTRIAC-63-E" pointList="160,128,228,128" />
+
+<item itemtype="Connector" uid="Connector-434" startpinid="Resistor-70-lPin" endpinid="Node-126-0" pointList="148,148,148,140" />
+
+<item itemtype="Connector" uid="Connector-435" startpinid="Resistor-70-rPin" endpinid="Tunnel-116-pin" pointList="148,180,148,196" />
+
+<item itemtype="Connector" uid="Connector-439" startpinid="Tunnel-110-pin" endpinid="Resistor-7-rPin" pointList="100,-24,100,-44" />
+
+</circuit>
