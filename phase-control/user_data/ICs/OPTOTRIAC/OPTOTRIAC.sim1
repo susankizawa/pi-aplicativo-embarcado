@@ -22,7 +22,7 @@
 
 <item itemtype="Tunnel" CircId="Tunnel-44" mainComp="false" Show_id="false" Show_Val="false" Pos="-616,84" rotation="0" hflip="1" vflip="1" label="Tunnel-44" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="-76,-96" circPos="-616,84" boardRot="0" circRot="0" boardHflip="1" boardVflip="1" Name="IN" IsBus="false" />
 
-<item itemtype="Triac" CircId="Triac-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-452,64" rotation="90" hflip="1" vflip="1" label="Triac-85" idLabPos="-12,-30" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="88,-116" circPos="-452,64" boardRot="90" circRot="90" boardHflip="1" boardVflip="1" GateRes="100 Ω" TrigCurr="10 mA" HoldCurr="8.2 mA" />
+<item itemtype="Triac" CircId="Triac-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-452,64" rotation="90" hflip="1" vflip="1" label="Triac-85" idLabPos="-12,-30" labelrot="0" valLabPos="-16,20" valLabRot="0" boardPos="88,-116" circPos="-452,64" boardRot="90" circRot="90" boardHflip="1" boardVflip="1" GateRes="100 Ω" TrigCurr="10 mA" HoldCurr="100 µA" />
 
 <item itemtype="Node" CircId="Node-84" mainComp="false" boardPos="-1e+06,-1e+06" circPos="0,0" boardRot="-1e+06" circRot="0" boardHflip="1" boardVflip="1" Pos="-484,128" />
 
